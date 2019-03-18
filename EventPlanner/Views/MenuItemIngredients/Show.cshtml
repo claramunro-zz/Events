@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle"><h2>@Model["menuItemIngredient"].GetIngredientDescription()</h2></h1>
+<h4><a href="/menuItemIngredients/@Model["menuItemIngredient"].GetId()/edit">EDIT DETAILS</a></h4>
+
+<h3>Dish: @Model["menuItem"].GetMenuItemDescription()</h3>
+<h3>Store: @Model["store"].GetStoreName()</h3>
+<br>
+
+<div class="container">
+  <a href="/menuItemIngredients">Return to Food Items</a>
+</div>

@@ -1,0 +1,24 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle">UPDATE INVITEE<h2>@Model["invitee"].GetInviteeName()</h2></h1>
+<br>
+
+<form action="/invitees/@Model["invitee"].GetId()/edit" method="post">
+
+  <label for="inviteeName">Name:</label>
+  <input type="text" name="inviteeName" value="@Model["invitee"].GetInviteeName()" required>
+
+  <label for="inviteeEmailAddress">Email:</label>
+  <input type="text" name="inviteeEmailAddress" value="@Model["invitee"].GetInviteeEmailAddress()" required>
+
+  <button type="submit">Update</button>
+</form>
+
+<hr>
+<br>
+<div class="container">
+  <br>
+  <a href="/invitees/@Model["invitee"].GetId()">Return to @Model["invitee"].GetInviteeName()</a>
+</div>

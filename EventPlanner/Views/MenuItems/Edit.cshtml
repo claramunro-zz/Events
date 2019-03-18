@@ -1,0 +1,19 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle">UPDATE DISH<h2>@Model["menuItem"].GetMenuItemDescription()</h2></h1>
+<br>
+
+<form action="/menuItems/@Model["menuItem"].GetId()/edit" method="post">
+  <label for="menuItemDescription">Description:</label>
+  <input type="text" name="menuItemDescription" value="@Model["menuItem"].GetMenuItemDescription()" required>
+  <button type="submit">Update</button>
+</form>
+
+<hr>
+<br>
+<div class="container">
+  <br>
+  <a href="/menuItems/@Model["menuItem"].GetId()">Return to @Model["menuItem"].GetMenuItemDescription()</a>
+</div>

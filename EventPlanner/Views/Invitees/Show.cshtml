@@ -1,0 +1,41 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle"><h2>@Model["invitee"].GetInviteeName()</h2></h1>
+<br>
+<a href="/invitees/@Model["invitee"].GetId()/edit">EDIT DETAILS</a>
+
+<br>
+<h5>Invitee Email Address:  @Model["invitee"].GetInviteeEmailAddress()</h5>
+<br>
+
+@if (@Model["events"].Count != 0)
+{
+  <h4>EVENTS:</h4>
+  <ul>
+    @foreach (var selectedEvent in @Model["events"])
+    {
+      <li>@selectedEvent.GetEventName()<a href='/invitees/@Model["invitee"].GetId()/events/@selectedEvent.GetId()/delete'><i class="far fa-times-circle"></i></a></li>
+    }
+  </ul>
+}
+<form action='/invitees/@Model["invitee"].GetId()/events/new' method='post'>
+  <label for='eventId'>Add Event</label>
+  <select id='eventId' name='eventId' type='text'>
+    @foreach (var selectedEvent in @Model["allEvents"])
+    {
+      <option value='@selectedEvent.GetId()'>@selectedEvent.GetEventName()</option>
+    }
+  </select>
+  <button type='submit'>Add Event for the Invitee</button>
+</form>
+<hr>
+
+
+
+<hr>
+<br>
+<div class="container">
+  <a href="/invitees">Return to Invitees</a>
+</div>

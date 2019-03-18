@@ -1,0 +1,21 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle">UPDATE STORE<h2>@Model["stores"].GetStoreName()</h2></h1>
+<br>
+
+<form action="/stores/@Model["stores"].GetId()/edit" method="post">
+
+  <label for="storeName">Name:</label>
+  <input type="text" name="storeName" value="@Model["stores"].GetStoreName()" required>
+
+  <button type="submit">Update Store</button>
+</form>
+
+<hr>
+<br>
+<div class="container">
+  <br>
+  <a href="/stores/@Model["stores"].GetId()">Return to @Model["stores"].GetStoreName()</a>
+</div>

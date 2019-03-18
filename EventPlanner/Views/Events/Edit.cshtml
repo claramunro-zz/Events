@@ -1,0 +1,37 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle">UPDATE EVENT<h2>@Model["selectedEvent"].GetEventName()</h2></h1>
+<br>
+
+<form action="/events/@Model["selectedEvent"].GetId()/edit" method="post">
+
+  <label for="name">Event Name:</label>
+  <input type="text" name="name" value="@Model["selectedEvent"].GetEventName()" required>
+  <br>
+  <label for="eventDate">Event Date:</label>
+  <input type="date" name="eventDate" class="form-control" value="@Model["selectedEvent"].GetEventDate()" required>
+
+  <label for="eventLocation">Event Location:</label>
+  <input type="text" name="eventLocation" value="@Model["selectedEvent"].GetEventLocation()" required>
+  <br>
+  
+  <label for="menuId">Select a Menu:</label>
+  <select id="menuId" name="menuId" type="text" value="@Model["eventMenu"].GetMenuTheme()">
+  @foreach (var menu in @Model["allMenus"])
+  {
+    <option value='@menu.GetId()'>@menu.GetMenuTheme()</option>
+  }
+  </select>
+
+  <button type="submit">Update</button>
+</form>
+
+
+<hr>
+<br>
+<div class="container">
+  <br>
+  <a href="/events/@Model["selectedEvent"].GetId()">Return to @Model["selectedEvent"].GetEventName()</a>
+</div>

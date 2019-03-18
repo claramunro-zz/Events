@@ -1,0 +1,6 @@
+obj/
+bin/
+database.sql
+*.docx
+*.vpp*
+*.jpg

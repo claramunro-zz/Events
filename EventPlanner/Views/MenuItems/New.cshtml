@@ -1,0 +1,22 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle">ADD NEW DISH</h1>
+<hr>
+
+<form action="/menuItems/new" method="post">
+  <label for="menuItemDescription">Description:</label>
+  <input id="menuItemDescription" name="menuItemDescription" type="text" required>
+  <br>
+  <br>
+  <button type="submit">Add New Dish</button>
+</form>
+<br>
+<br>
+
+<hr>
+<br>
+<div class="container">
+  <a href="/menuItems">Return to Dishes</a>
+</div>

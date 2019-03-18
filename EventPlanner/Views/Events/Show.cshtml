@@ -1,0 +1,64 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1 id="pageTitle"><h2>@Model["selectedEvent"].GetEventName()</h2></h1>
+<br>
+<h4><a href="/events/@Model["selectedEvent"].GetId()/edit">EDIT DETAILS</a></h4>
+<br>
+
+<h5>Event Date:  @Model["selectedEvent"].GetEventDate()</h5>
+<h5>Event Location:  @Model["selectedEvent"].GetEventLocation()</h5>
+<h5>Event Menu:  @Model["eventMenu"].GetMenuTheme()</h5>
+
+<br>
+<br>
+@if (@Model["tasks"].Count != 0)
+{
+  <h4>TASKS:</h4>
+  <ul>
+    @foreach (var task in @Model["tasks"])
+    {
+      <li>@task.GetTaskDescription()<a href='/events/@Model["selectedEvent"].GetId()/tasks/@task.GetId()/delete'><i class="far fa-times-circle"></i></a></li>
+    }
+  </ul>
+}
+<form action='/events/@Model["selectedEvent"].GetId()/tasks/new' method='post'>
+  <label for='taskId'>Select A Task</label>
+  <select id='taskId' name='taskId' type='text'>
+    @foreach (var task in @Model["allTasks"])
+    {
+      <option value='@task.GetId()'>@task.GetTaskDescription()</option>
+    }
+  </select>
+  <button type='submit'>Add Task</button>
+</form>
+<hr>
+
+@if (@Model["invitees"].Count != 0)
+{
+  <h4>INVITEES:</h4>
+  <ul>
+    @foreach (var invitee in @Model["invitees"])
+    {
+      <li>@invitee.GetInviteeName()<a href='/events/@Model["selectedEvent"].GetId()/invitees/@invitee.GetId()/delete'><i class="far fa-times-circle"></i></a></li>
+    }
+  </ul>
+}
+<form action='/events/@Model["selectedEvent"].GetId()/invitees/new' method='post'>
+  <label for='inviteeId'>Select An Invitee</label>
+  <select id='inviteeId' name='inviteeId' type='text'>
+    @foreach (var invitee in @Model["allInvitees"])
+    {
+      <option value='@invitee.GetId()'>@invitee.GetInviteeName()</option>
+    }
+  </select>
+  <button type='submit'>Add Invitee</button>
+</form>
+<hr>
+
+<hr>
+<br>
+<div class="container">
+  <a href="/events">Return to Events</a>
+</div>
