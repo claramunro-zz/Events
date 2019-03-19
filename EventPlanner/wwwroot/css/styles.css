@@ -63,7 +63,7 @@ svg.fa- {
     margin: 2%;
 }
 
-#main-content {
+#mainContent {
     padding: 0px 40px 0px 40px;
 }
 
@@ -108,7 +108,7 @@ a, a:hover {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #303030;
+    background: #b41616;
     text-align: center;
 }
 
@@ -183,7 +183,7 @@ color: rgb(216, 216, 216);
 .fa-plus {
 color: rgb(216, 216, 216);
 }
-.fa-plus:active {
+.fa-plus .active {
 color: #3da599;
 }
 .fa-plus:hover {
@@ -194,7 +194,7 @@ color: white;
 font-size: 30px;
 color: rgb(216, 216, 216);
 }
-.fa-book-open:active {
+.fa-book-open.active {
 font-size: 30px;
 color: #c41e3d;
 }
@@ -206,7 +206,7 @@ color: #c41e3d;
 .fa-utensils {
     color: rgb(216, 216, 216);
 }
-.fa-utensils:active {
+.fa-utensils.active {
 color: #da394a;
 }
 .fa-utensils:hover {
@@ -216,7 +216,7 @@ color: #da394a;
 .fa-check {
     color: rgb(216, 216, 216);
 }
-.fa-check:active {
+.fa-check.active {
   color: #ffc857;
 }
 .fa-check:hover {
@@ -226,7 +226,7 @@ color: #da394a;
 .fa-at {
     color: rgb(216, 216, 216);
 }
-.fa-at:active {
+.fa-at.active {
 color: #ef798a;
 }
 .fa-at:hover {
@@ -236,7 +236,7 @@ color: #ef798a;
 .fa-shopping-cart {
     color: rgb(216, 216, 216);
 }
-.fa-shopping-cart:active {
+.fa-shopping-cart.active {
 color: #ea8c55;
 }
 .fa-shopping-cart:hover {
@@ -246,7 +246,7 @@ color: #ea8c55;
 .fa-seedling {
     color: rgb(216, 216, 216);
 }
-.fa-seedling:active {
+.fa-seedling.active {
 color: #ff696d;
 }
 .fa-seedling:hover {
@@ -299,3 +299,9 @@ color: #ff696d;
     right: 20px;
     transform: translateY(-50%);
 } */
+
+
+#eventNav
+{
+    background-color: #3DA599;
+}

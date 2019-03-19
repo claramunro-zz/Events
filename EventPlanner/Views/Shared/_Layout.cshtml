@@ -25,7 +25,7 @@
     <script type="text/javascript" href="~/js/scripts.js"></script>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
 
    <div class="wrapper">
             <!-- Sidebar Holder -->
@@ -60,25 +60,10 @@
 
     <div id="content">
 
-            <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-
-                        <button type="button" id="sidebarCollapse">
-                        <svg class="fas fa-bars"></svg>
-                        </button>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="/">EXIT</a></li>
-                                <li><a href="#"> </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            <div id="main-content">
             @RenderBody()
-            </div>
+
             @Html.Partial("Footer")
-            </div>
+ 
     </div>
 
 <script>$(document).ready(function () {

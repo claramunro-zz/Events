@@ -2,9 +2,26 @@
   Layout = "_Layout";
 }
 
+<nav class="navbar navbar-default" id="eventNav">
+                    <div class="container-fluid">
+
+                        <button type="button" id="sidebarCollapse">
+                        <svg class="fas fa-bars"></svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"> </a></li>
+                                <li><a href="#"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+<div id="mainContent">
+
 <h1 id="pageTitle">EVENTS</h1>
 <h5>Click on an Event to See its Details</h5>
-<h5><a href="/events/new">Add a New Event</a><h/h5>
+<h5><a href="/events/new">Add a New Event</a></h5>
 
 @if (Model.Count != 0)
 {
@@ -24,3 +41,6 @@
     </ul>
   }
 }
+
+
+</div>
