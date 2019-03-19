@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto');
 
 body {
-  position: relative;
-  background: url("../img/photobackground1.png");
+  background: url("../img/photobackground1.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .container {
@@ -26,12 +26,11 @@ h1, h2 {
 }
 
 button {
-  background-color: #c99de8;
+  background-color: #ffffff;
   color: black;
-  width: 200px;
+  width: 150px;
   border: 3px solid black;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 5px;
   margin: 25px;
 }
 
@@ -40,3 +39,4 @@ a {
   font-weight: bold;
   font-size: 20px;
 }
+

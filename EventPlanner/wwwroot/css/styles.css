@@ -18,15 +18,9 @@ svg.fa- {
     height: 50px;
 }
 
-
 .wrapper {
     display: flex;
-<<<<<<< HEAD
     width: 100%
-    align-items: stretch;
-=======
-    width: 100%;
->>>>>>> master
 }
 
 .far {
@@ -53,7 +47,7 @@ svg.fa- {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
 }
 
 #pageTitle {
@@ -62,7 +56,7 @@ svg.fa- {
 
 .navbar-default {
     box-shadow: 0px 4px 6px #CDCDCD;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar-header {
@@ -137,14 +131,12 @@ a, a:hover {
     text-align: center;
 }
 
-#sidebar ul li a:hover {
-    color: rgb(216, 216, 216);
-}
+
 
 
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-    color: rgb(37, 207, 128);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -181,34 +173,88 @@ ul ul a {
   font-size: 3rem;
 }
 
+
+/* sidebar colors */
+
+#sidebar ul li a:hover {
+color: rgb(216, 216, 216);
+}
+
 .fa-plus {
-  color: #3da599;
+color: rgb(216, 216, 216);
+}
+.fa-plus:active {
+color: #3da599;
+}
+.fa-plus:hover {
+color: white;
 }
 
 .fa-book-open {
-  font-size: 30px;
-  color: #c41e3d;
+font-size: 30px;
+color: rgb(216, 216, 216);
+}
+.fa-book-open:active {
+font-size: 30px;
+color: #c41e3d;
+}
+.fa-book-open:hover {
+font-size: 30px;
+color: #c41e3d;
 }
 
 .fa-utensils {
-  color: #da394a;
+    color: rgb(216, 216, 216);
+}
+.fa-utensils:active {
+color: #da394a;
+}
+.fa-utensils:hover {
+color: #da394a;
 }
 
 .fa-check {
+    color: rgb(216, 216, 216);
+}
+.fa-check:active {
+  color: #ffc857;
+}
+.fa-check:hover {
   color: #ffc857;
 }
 
 .fa-at {
-  color: #ef798a;
+    color: rgb(216, 216, 216);
+}
+.fa-at:active {
+color: #ef798a;
+}
+.fa-at:hover {
+color: #ef798a;
 }
 
 .fa-shopping-cart {
-  color: #ea8c55;
+    color: rgb(216, 216, 216);
+}
+.fa-shopping-cart:active {
+color: #ea8c55;
+}
+.fa-shopping-cart:hover {
+color: #ea8c55;
 }
 
 .fa-seedling {
-  color: #ff696d;
+    color: rgb(216, 216, 216);
 }
+.fa-seedling:active {
+color: #ff696d;
+}
+.fa-seedling:hover {
+color: #ff696d;
+}
+
+
+
 
 #closeNav {
     background-color: transparent;
@@ -239,8 +285,6 @@ ul ul a {
         margin-left: 0;
     }
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -255,4 +299,3 @@ ul ul a {
     right: 20px;
     transform: translateY(-50%);
 } */
->>>>>>> master
