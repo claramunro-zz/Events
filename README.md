@@ -8,6 +8,16 @@
 ## Description
 An event planning web application to assist in organizing venues, menus, food, and mood to maximize event success. The applications manages databases take into account menu ingredients and preparation, else catering options, venue details, invitees and their responses or requirements, tasks prioritizing and distributing among event managers, etc.
 
+<table>
+  <td><img src="/images/mockup1.png" /></td>
+  <td><img src="/images/mockup2.jpg" /></td>  
+</table>
+
+<table>
+  <td><img src="/images/mockup3.jpg" /></td>
+  <td><img src="/images/mockup4.jpg" /></td>  
+</table>
+
 
 ## User Stories and Specifications
 
