@@ -3,18 +3,11 @@
 | [**claramunro**](https://github.com/claramunro) | [**LondresRi**](https://github.com/LondresRi) | [**MarkStrickland562**](https://github.com/MarkStrickland562) | [**MicaelaDJ**](https://github.com/MicaelaDJ) |
 | Clara Munro | Shawn Lunsford | Mark Strickland | Micaela Jawor |
 
-## | **eHappenings Project** |
-
-###### Initiated March 5th, 2019. Updated March 14th, 2019.
-
-----------
+## EVENTS+
 
 ## Description
 An event planning web application to assist in organizing venues, menus, food, and mood to maximize event success. The applications manages databases take into account menu ingredients and preparation, else catering options, venue details, invitees and their responses or requirements, tasks prioritizing and distributing among event managers, etc.
 
-## Known Bugs
-
-* No known bugs.
 
 ## User Stories and Specifications
 
@@ -1404,10 +1397,6 @@ mysql>DemoData.sql
 
 ## Built With
 
-* Windows 10.1
-* iMac OS X El Capitan 10.11.6
-* Linux Ubuntu 18.04 bionic
-* Atom (IDE)
 * VisualStudio Code (IDE)
 * C#
 * JavaScript / jQuery 3.3.7
